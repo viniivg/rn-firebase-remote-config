@@ -1,79 +1,69 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Firebase Remote Config
 
-# Getting Started
+Neste app React Native, configuramos o **Firebase Remote Config**, onde é um serviço que permite alterar o comportamento e a aparência de um aplicativo em tempo real, sem a necessidade de publicar uma nova versão na loja. Ele funciona através de parâmetros que você define no console do Firebase. Esses parâmetros podem ser recuperados pelo app e usados para modificar elementos como layout, texto, funcionalidades e muito mais. É uma ferramenta útil para testes A/B, personalização de conteúdo para diferentes segmentos de usuários e para lançar novas funcionalidades de forma controlada.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Para saber mais sobre a funcionalidade e ver o passo a passo, a aula está disponível no [YouTube](https://youtu.be/nsT3c8kFTyw).
 
-## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Antes de rodar o projeto
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Altere seus arquivos credenciais para poder rodar o seu projeto. Eles são cruciais para poder se comunicar com seu [Projeto Firebase](https://youtu.be/12R-7Oejk7c).
 
-```bash
-# using npm
-npm start
+1. Altere o arquivo **google-services.json** em `android/app` para o mesmo arquivo que você criou na aula de [Configuração para Android](https://youtu.be/nGTPHD7eOF8).
+2. Altere o arquivo **GoogleService-Info.plist** em `ios/` para o mesmo arquivo que você criou na aula de [Configuração para iOS](https://youtu.be/AfQCQBpfE-A).
+  
 
-# OR using Yarn
-yarn start
-```
+## Como Rodar o Projeto
 
-## Step 2: Start your Application
+Siga os passos abaixo para clonar e rodar o projeto no seu ambiente local.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+### Passos para Clonar e Rodar o Projeto
 
-```bash
-# using npm
-npm run android
+  
 
-# OR using Yarn
-yarn android
-```
+1. ****Clone o repositório:****
 
-### For iOS
+    ```bash 
+    git clone https://github.com/viniivg/rn-firebase-remote-config.git
+    cd rn-firebase-remote-config
+    ```
 
-```bash
-# using npm
-npm run ios
+2. ****Instale as dependências:****
 
-# OR using Yarn
-yarn ios
-```
+    ```bash 
+    npm install
+    ## ou
+    yarn install
+    ```
+    
+    Para iOS
+    ```bash 
+    cd ios && pod install
+    ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+3. ****Execute o projeto:****
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+    ```bash 
+    npx react-native run-android
+    ```
+    
+    Ou para iOS:
+    
+    ```bash 
+    npx react-native run-ios
+    ```
 
-Now that you have successfully run the app, let's modify it.
+ 
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Redes sociais
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Nos siga nas redes sociais
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+- ****[Instagram](https://www.instagram.com/vinii.vg)****
+- ****[YouTube](https://www.youtube.com/c/ViniciusGuedesDev)****
+- ****[LinkedIn](https://www.linkedin.com/in/seu-usuario)****
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+  
